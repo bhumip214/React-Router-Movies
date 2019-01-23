@@ -46,10 +46,7 @@ export default class Movie extends Component {
     return (
       <div className="save-wrapper">
         <MovieCard movie={this.state.movie} />;
-        <div
-          onClick={() => this.props.addToSavedList(this.state.movie)}
-          className="save-button"
-        >
+        <div onClick={this.saveMovie} className="save-button">
           Save
         </div>
       </div>
